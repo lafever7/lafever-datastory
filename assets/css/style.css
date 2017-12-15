@@ -9,7 +9,7 @@ section#data-visualization div,
 }		
 		
 section#introduction div{
-		background: #563;
+		background: #467;
 		display:grid; 
 		
 		}
@@ -21,5 +21,8 @@ section#personal-data {
 		
 section#data-visualization {
 		display:grid;
-		background: #563
+		background: #467
 		}
+section#explained-video {
+		display:grid;
+		background: #563}
