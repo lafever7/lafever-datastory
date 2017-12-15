@@ -1,3 +1,25 @@
-body {
-	font-size: 18px;
-} 
+article#personal-digital{
+font-size:18px;
+
+section#introduction div,
+section#personal-data div,
+section#data-visualization div,
+	max-height: 350px;
+	margin-bottom: 15px;
+}		
+		
+section#introduction div{
+		background: #563;
+		display:grid; 
+		
+		}
+		
+section#personal-data {
+		display:grid;
+		background: #563
+		}
+		
+section#data-visualization {
+		display:grid;
+		background: #563
+		}
