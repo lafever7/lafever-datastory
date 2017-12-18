@@ -4,14 +4,14 @@ font-size:18px;
 section#introduction div,
 section#personal-data div,
 section#data-visualization div,
+section#explained-video, {
 	max-height: 350px;
 	margin-bottom: 15px;
 }		
 		
-section#introduction div{
+section#introduction {
 		background: #467;
-		display:grid; 
-		
+		display: grid
 		}
 		
 section#personal-data {
@@ -23,6 +23,9 @@ section#data-visualization {
 		display:grid;
 		background: #467
 		}
+		
 section#explained-video {
 		display:grid;
-		background: #563}
+		background: #563
+		}
+		
