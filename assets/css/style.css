@@ -1,31 +1,94 @@
-article#personal-digital{
-font-size:18px;
-
-section#introduction div,
+/*section#introduction div,
 section#personal-data div,
 section#data-visualization div,
-section#explained-video, {
+section#explained-video {
+	
 	max-height: 350px;
-	margin-bottom: 15px;
+	margin-bottom: 15px
 }		
 		
-section#introduction {
+section#introduction div {
+		display:grid;
 		background: #467;
-		display: grid
+		padding: 15px;
+		
 		}
 		
-section#personal-data {
+section#personal-data div {
 		display:grid;
-		background: #563
+		background: #563;
+		padding: 15px;
 		}
 		
-section#data-visualization {
+section#data-visualization div {
 		display:grid;
-		background: #467
+		background: #467;
+		padding: 15px;
 		}
 		
-section#explained-video {
+section#explained-video div {
 		display:grid;
-		background: #563
-		}
+		background: #563;
+		padding: 15px;
+		}*/
 		
+* {
+  box-sixing: border-box;
+}
+.grid {
+  display:grid;
+  grid-template-columns: [content-start] 1fr [content-end];
+  grid-template-rows: auto [content-start] auto [content-end];
+ 
+}
+@media (min-width: 320px) {
+  .grid{  grid-template-columns: 2fr [content-start] 2fr [content-end];}
+
+header {
+  background-color: #14A76C;
+  grid-column: 1 / 3;
+  align-content: center;
+}
+
+article {
+  background-color: #FC4445;
+  padding: 10px;
+  grid-column: 1 / 4;
+  grid-row: 2;
+  
+}
+
+sectionpd {
+  background-color: #3FEEE6;
+  padding:10px;
+  grid-column: 1 / 4;
+  grid-row: 3;
+}
+
+sectiondv {
+  background-color: #97CAEF;
+  padding: 10px;
+  grid-column: 2;
+  grid-row: 4;}
+ 
+  aside {
+  background-color: #CAFAFE;
+  grid-column: 1;
+  grid-row: 4;
+  background-size: contain;
+}
+ 
+  
+
+sectionev {
+  background-color: #97CAEF;
+  padding: 10px;
+  grid-column: 1;
+  grid-row: 5;}
+
+asideev { 
+  background-color: #CAFAFE;
+  grid-column: 2;
+  grid-row: 5;
+}
+}
